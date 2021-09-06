@@ -8,7 +8,7 @@
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT id FROM users WHERE username = '$myusername' and password = '$mypassword'";
+      $sql = "SELECT id FROM online_shop WHERE username = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
@@ -18,7 +18,7 @@
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-         session_name("$myusername");
+         session_name("username");
          $_SESSION['login_user'] = $myusername;
          
          header("location: welcome.php");
