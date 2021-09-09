@@ -23,20 +23,24 @@
 
             <div class="col">
                 <div class="p-3 border">
-                <span class="input-group-text" id="addon-wrapping">@</span>
-                <input type="text" id="email" name="email" placeholder="Adresse Email" aria-describedby="addon-wrapping"></div>
+                    <div class="input-group flex-nowrap">   
+                        <span class="input-group-text" id="addon-wrapping">@</span>
+                        <input type="text" id="Username" name="email" placeholder="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
             </div>
 
             <div class="col">
             <div class="p-3 border">
-                
                 <input type="text" id="Password" name="password" placeholder="Password"></div>
             </div>
 
             <div class="col">
             <div class="p-3 border">
-                <button type="button" class="btn btn-dark" width="20px">Log In</button></div>
-                
+                <button id="login" type="button" class="btn btn-dark" width="20px">Log In</button>
+                <button id="singup" type="button" class="btn btn-dark" width="20px">Sing Up</button>
+                <button id="report" type="button" class="btn btn-dark" width="20px">Report</button>
+                </div>
             </div>
         </div>
     </div>
