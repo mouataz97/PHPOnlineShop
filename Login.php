@@ -10,15 +10,15 @@
       
       $sql = "SELECT id FROM users WHERE username = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      //$active = $row['active'];
+      $row = mysqli_fetch_array($result,auth);
+      $active = $row['active'];
       
       $count = mysqli_num_rows($result);
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-         session_name("username");
+         session_register("myusername");
          $_SESSION['login_user'] = $myusername;
          
          header("location: welcome.php");
@@ -58,12 +58,12 @@
             <div style = "margin:30px">
                
                <form action = "" method = "post">
-                  <label>UserName  :</label> <input type = "text" name = "username" class = "box"/><br /><br />
-                  <label>Password  :</label> <input type = "password" name = "password" class = "box" /><br/><br />
+                  <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
+                  <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = " Submit "/><br />
                </form>
-               <?php  if (isset($error)) { echo $error; } ?>
-               <div style = "font-size:11px; color:#cc0000; margin-top:10px"></div>
+               
+               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
 					
             </div>
 				
