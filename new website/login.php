@@ -10,11 +10,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<style>
+    body{
+        background-color:darkgray;
+    }
+</style>
 <div class="jumbotron jumbotron-fluid text-center">
   <h1>Welcome to <strong style="color:green">mysupermarket</strong></h1>
   <p>Find quality Manufacturers, Suppliers, and suggest new products in future sells</p> 
 </div>
+
+
 
 <form action = "" method = "post">
     <div class="container-fluid">

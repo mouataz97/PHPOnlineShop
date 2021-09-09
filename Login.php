@@ -10,7 +10,7 @@
       
       $sql = "SELECT id FROM users WHERE username = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,auth);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
       
       $count = mysqli_num_rows($result);
@@ -18,7 +18,7 @@
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
-         session_register("myusername");
+         session_name("$myusername");
          $_SESSION['login_user'] = $myusername;
          
          header("location: welcome.php");
@@ -49,7 +49,7 @@
       
    </head>
    
-   <body bgcolor = "#FFFFFF">
+   <body  " bgcolor = "#FFFFFF">
 	
       <div align = "center">
          <div style = "width:300px; border: solid 1px #333333; " align = "left">
@@ -63,7 +63,7 @@
                   <input type = "submit" value = " Submit "/><br />
                </form>
                
-               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php if (isset( $error)) {echo $error;} ?></div>
 					
             </div>
 				
