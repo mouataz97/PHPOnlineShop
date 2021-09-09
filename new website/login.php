@@ -12,10 +12,13 @@
 <style>
     #centry{
         text-align:center;
-        
     }
 
+
+
+
 </style>
+
 <body>
 
 <div class="jumbotron text-center ">
