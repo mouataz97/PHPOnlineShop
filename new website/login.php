@@ -10,30 +10,78 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <style>
-    #centry{
-        text-align:center;
+   body{
+       background-color: black;
+   }
+    
+    #background_image{
+        background-image: Url('shop-cover.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
 
+    .mynav{
+        background-color: green;
+        color: black ;
+        overflow: hidden;
+    }
+    .myspan{
+        color: white;
+        
+    }
+    
+    .mynav div a{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        
+    }
 
+    .mynav div a:hover{
+        background-color: #ddd;
+        color: black;
+    }
 
+    .mynav div a:active {
+        background-color: #04AA6D;
+        color: red;
+    }
 
 </style>
 
 <body>
+<div>
+    <div class="jumbotron text-center ">
+        <h1><a class="text-danger">Welcome to</a> <strong style="color:green">BMMarket</strong></h1>
+        <h4 style="color:black;"> quality Manufacturers, Suppliers, and suggest new products in the future sells</h4> 
+        <h2>you can log in from here </h2>
+    </div>
+</div>
+<div  class="col-xs m-4 ">
+    <nav class="mynav">
+        <div>
+            <a href="../new website/Home.php">Home</a>
 
-<div class="jumbotron text-center ">
-  <h1><a class="text-danger">Welcome to</a> <strong style="color:green">BMMarket</strong></h1>
-  <h4 style="color:black;"> quality Manufacturers, Suppliers, and suggest new products in the future sells</h4> 
+            <a href="../new website/cart.php">Cart</a>
+
+            <a href="../new website/login.php">Login</a>
+
+            <a href="../new website/signup.php">Sign Up</a>
+        </div>
+    </nav>
 </div>
 
-
+<div id="background_image">
 <form action = "" method = "post" >
     <div class="container-fluid" >
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md">
         
-            <div class="col-md-center">
+            <div class="col-xs p-4">
 
-                <div class="col" >
+                <div class="col " >
                     <div class="p-3 border" >
                         <div class="input-group flex-nowrap" >   
                             <span class="input-group-text" id="addon-wrapping">@</span>
@@ -55,10 +103,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-right">
-                <div class="col-2">
-                    <textarea name="textarea" id="reparea" cols="30" rows="10" placeholder="you can report an issue from here !!!"></textarea>
-                    <button id="myrep" type="button" class="btn btn-dark" width="20px" id="centry">Report</button>
+            <div class="col-md-right ">
+                <div class="col-2 p-4 ">
+                    <textarea name="textarea" id="reparea" cols="30" rows="5" placeholder="you can report an issue from here !!!"></textarea>
+                    
+                    <div class="col-l p-1">
+                        <button id="myrep" type="button" class="btn btn-dark" width="20px" id="centry">Report</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,5 +117,7 @@
 </div>
 
 </form>
+</div>
+
 </body>
 </html>
