@@ -20,32 +20,25 @@
         background-size: 100% 100%;
     }
 
-    .mynav{
+    .nav{
         background-color: green;
-        color: black ;
-        overflow: hidden;
-    }
-    .myspan{
-        color: white;
-        
     }
     
-    .mynav div a{
+    .nav-link{
         float: left;
         color: #f2f2f2;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 30px;
-        
     }
 
-    .mynav div a:hover{
-        background-color: #ddd;
+    .nav-link:hover{
+        background-color: darkgreen;
         color: black;
     }
 
-    .mynav div a:active {
+    .nav-link:active {
         background-color: #04AA6D;
         color: red;
     }
@@ -60,18 +53,22 @@
         <h2>you can log in from here </h2>
     </div>
 </div>
+
 <div  class="col-xs m-4 ">
-    <nav class="mynav">
-        <div>
-            <a href="../new website/Home.php">Home</a>
-
-            <a href="../new website/cart.php">Cart</a>
-
-            <a href="../new website/login.php">Login</a>
-
-            <a href="../new website/signup.php">Sign Up</a>
-        </div>
-    </nav>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="../new website/home.php">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../new website/login.php">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../new website/signup.php">Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../new website/cart.php">Cart</a>
+        </li>
+    </ul>
 </div>
 
 <div id="background_image">
