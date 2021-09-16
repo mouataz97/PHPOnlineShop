@@ -48,7 +48,7 @@
 <body>
 <div>
     <div class="jumbotron text-center ">
-        <h1><a class="text-danger">Welcome to</a> <strong style="color:green">BMMarket</strong></h1>
+        <h1 class="text-danger">Welcome to <strong style="color:green">BMMarket</strong></h1>
         <h4 style="color:black;"> quality Manufacturers, Suppliers, and suggest new products in the future sells</h4> 
         <h2>you can log in from here </h2>
     </div>
