@@ -12,7 +12,7 @@
 </head>
 
 <style>
-    .bg{ background: url('../PHPOnlineShop/montains.jpg') no-repeat;width: 100%; height: 100vh;}
+    .bg{ background: url('../PHPONLINESHOP/colorr3.jpg') no-repeat; width: 100%;height: 100vh;}
     .emp{
         border: 1px solid #fff; padding: 50px 60px; margin-top: 20vh; 
         -webkit-box-shadow: 4px -1px 44px 15px rgba(0,0,0,0.53);
