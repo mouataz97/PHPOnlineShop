@@ -12,7 +12,7 @@
 </head>
 
 <style>
-    .bg{ background: url('../PHPONLINESHOP/colorr3.jpg') no-repeat; width: 100%;height: 100vh;}
+  .bg{ background: url('../PHPONLINESHOP/colorr.jpg') no-repeat; width: 100%;height: 100vh;}
     .emp{
         border: 1px solid #fff; padding: 50px 60px; margin-top: 20vh; 
         -webkit-box-shadow: 4px -1px 44px 15px rgba(0,0,0,0.53);
@@ -65,7 +65,7 @@
                                 <button type="submit" class="btn insert">login</button>
                                 <p style="text-align:center;"><a href="#">  Forgot : Username/Password</a></p>
                                 <br>
-                                <p style="text-align:center;"><a href="#" style="font-size: 10px; color:red;">Create your account →</a></p>
+                                <p style="text-align:center;"><a href="../PHPOnlineShop/signup.php" style="font-size: 10px; color:red;">Create your account →</a></p>
                         </form>
                 </div>
             </div>
