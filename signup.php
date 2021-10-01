@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <style>
-  .bg{ background: url('../PHPONLINESHOP/colorr.jpg') no-repeat; width: 100%;height: 100vh;}
+  .bg{ background: url('../PHPONLINESHOP/colorr3.jpg') no-repeat; width: 100%;height: 100vh;}
 
 
 .centered-form .panel{
@@ -69,7 +69,7 @@
 			    			<input type="submit" value="Register" class="btn btn-info btn-block">
                 <br>
                 <br>
-                  <p style="text-align:center;"><a href="../PHPOnlineShop/signup.php" style="font-size: 10px; color:red;">Create your account →</a></p>
+                  <p style="text-align:center;"><a href="../PHPOnlineShop/login.php" style="font-size: 10px; color:red;">back to log in →</a></p>
 			    		</form>
 			    	</div>
 	    		</div>
